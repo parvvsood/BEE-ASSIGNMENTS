@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Parv — Designer, Developer & Creative Technologist. Explore my portfolio of projects, research, and creative work." />
+  <meta name="author" content="Parv" />
+  <meta name="theme-color" content="#050505" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Parv — Portfolio" />
+  <meta property="og:description" content="Designer, Developer & Creative Technologist." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/images/og-image.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+
+  <!-- Fonts Preconnect & Optimized Loading -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+Devanagari:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;600;700;800;900&display=swap" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <title>Parv — Portfolio</title>
+</head>
+
+<body>
+
+  <!-- ============================================================
+       LOADING SCREEN
+       Cinematic Multilingual Welcome Experience.
+       ============================================================ -->
+  <div id="loader" class="loader" role="status" aria-label="Welcome" aria-busy="true">
+    <div class="loader__glow" aria-hidden="true"></div>
+    <div class="loader__content">
+      <h1 id="loader-greeting" class="loader__greeting">Welcome</h1>
+    </div>
+    <div id="loader-percent" class="loader__percent" aria-live="polite">0%</div>
+  </div>
+
+
+  <!-- ============================================================
+       HEADER / NAVIGATION
+       Fixed top-bar with logo, nav links, and CTA.
+       ============================================================ -->
+  <header id="header" class="header">
+    <div class="header__inner container">
+
+      <!-- Logo -->
+      <a href="#hero" class="nav__logo" aria-label="Go to top">
+        <span class="nav__logo-text">Parv<span class="nav__logo-dot">.</span></span>
+      </a>
+
+      <!-- Primary Navigation -->
+      <nav class="nav__menu" aria-label="Primary navigation">
+        <ul class="nav__list" role="list">
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+          <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+          <li class="nav__item"><a href="#research" class="nav__link">Research</a></li>
+          <li class="nav__item"><a href="#creative" class="nav__link">Experience</a></li>
+          <li class="nav__item"><a href="#achievements" class="nav__link">Recognition</a></li>
+        </ul>
+      </nav>
+
+      <!-- CTA & Mobile Toggle -->
+      <div class="nav__actions">
+        <a href="#contact" class="nav__cta" id="nav-cta">Let's Talk</a>
+        <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span class="nav__toggle-line"></span>
+          <span class="nav__toggle-line"></span>
+          <span class="nav__toggle-line"></span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Overlay Menu -->
+    <div class="nav__mobile-overlay" id="nav-mobile-overlay" aria-hidden="true">
+      <ul class="nav__mobile-list" role="list">
+        <li><a href="#about" class="nav__mobile-link">About</a></li>
+        <li><a href="#skills" class="nav__mobile-link">Skills</a></li>
+        <li><a href="#projects" class="nav__mobile-link">Projects</a></li>
+        <li><a href="#research" class="nav__mobile-link">Research</a></li>
+        <li><a href="#creative" class="nav__mobile-link">Experience</a></li>
+        <li><a href="#achievements" class="nav__mobile-link">Recognition</a></li>
+        <li><a href="#contact" class="nav__mobile-link">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+
+  <!-- ============================================================
+       MAIN CONTENT
+       ============================================================ -->
+  <main id="main-content">
+
+
+    <!-- ==========================================================
+         HERO SECTION (Calm & Luxurious Editorial Landing)
+         Static centerpiece portrait background, top label, main name,
+         headline, description, and primary actions.
+         ========================================================== -->
+    <section id="hero" class="section hero">
+
+      <!-- 4K Ultra HD Spectral Gradient Background Container -->
+      <div class="hero__bg-wrap">
+        <img
+          src="assets/images/hero-spectral-bg.png"
+          alt="Parv Sood — 4K Grainy Spectral Mesh Background"
+          class="hero__bg-img"
+          id="hero-bg-img"
+          loading="eager"
+          fetchpriority="high"
+          decoding="sync"
+          width="3840"
+          height="2400"
+        />
+        <div class="hero__grain-overlay"></div>
+        <div class="hero__bg-overlay"></div>
+      </div>
+
+      <!-- Floating Glassmorphism Hero Navigation -->
+      <nav class="hero__nav-floating" id="hero-floating-nav" aria-label="Hero floating navigation">
+        <ul class="hero__nav-pill" role="list">
+          <li><a href="#about" class="hero__nav-link">About</a></li>
+          <li><a href="#skills" class="hero__nav-link">Skills</a></li>
+          <li><a href="#projects" class="hero__nav-link">Projects</a></li>
+          <li><a href="#research" class="hero__nav-link">Research</a></li>
+          <li><a href="#creative" class="hero__nav-link">Experience</a></li>
+          <li><a href="#achievements" class="hero__nav-link">Recognition</a></li>
+          <li><a href="#contact" class="hero__nav-cta">Let's Talk</a></li>
+        </ul>
+      </nav>
+
+      <!-- Centered Hero Main Content Container -->
+      <div class="hero__inner container">
+
+        <!-- Top Label -->
+        <span class="hero__label">AI ENGINEER &amp; CREATIVE TECHNOLOGIST</span>
+
+        <!-- Main Name Identity (Solid Bold + Luxury Display Serif) -->
+        <h1 class="hero__name">
+          <span class="hero__name-solid">Parv</span>
+          <span class="hero__name-serif">Sood</span>
+        </h1>
+
+        <!-- Headline (SMALLER THAN NAME ABOVE IT) -->
+        <p class="hero__title">
+          Architecting <span class="hero__title-serif-accent">Intelligent Systems</span> &amp; Digital Products.
+        </p>
+
+        <!-- Subtitle / Description Paragraph -->
+        <p class="hero__subtitle">
+          Transforming ambitious ideas into impactful AI software, full-stack systems, and cinematic digital experiences.
+        </p>
+
+        <!-- Action Buttons -->
+        <div class="hero__actions">
+          <a href="#projects" class="btn btn--primary" id="hero-cta-projects">
+            Explore My Work &rarr;
+          </a>
+          <a href="assets/ParvSood-Resume.pdf" class="btn btn--outline" download="ParvSood-Resume.pdf" id="hero-cta-resume">
+            Download Résumé
+          </a>
+        </div>
+
+        <!-- Scroll Cue Indicator -->
+        <div class="hero__scroll-cue" aria-hidden="true">
+          <span class="hero__scroll-text">Scroll</span>
+          <span class="hero__scroll-line"></span>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==========================================================
+         ABOUT SECTION
+         Short bio, portrait, and quick stats.
+         ========================================================== -->
+    <section id="about" class="section about">
+      <div class="about__inner container">
+
+        <!-- Section Header -->
+        <header class="section__header">
+          <span class="section__label">01 — About</span>
+          <h2 class="section__title">A little about me</h2>
+        </header>
+
+        <div class="about__grid">
+
+          <!-- Portrait -->
+          <figure class="about__portrait">
+            <img
+              src="assets/images/about-portrait.png"
+              alt="Parv Sood — About Portrait"
+              class="about__portrait-img"
+              loading="lazy"
+              width="480"
+              height="640"
+            />
+          </figure>
+
+          <!-- Bio -->
+          <div class="about__content">
+            <p class="about__text">
+              I'm Parv, an AI Engineer and Creative Technologist passionate about building intelligent software that solves real-world problems. My work sits at the intersection of artificial intelligence, full-stack development, and thoughtful user experiences, where I enjoy transforming ambitious ideas into impactful digital products.
+            </p>
+            <p class="about__text">
+              Over the past few years, I've explored machine learning, Retrieval-Augmented Generation (RAG), IoT systems, and modern web technologies while continuously challenging myself through projects, leadership opportunities, and technical competitions. Whether I'm architecting AI applications or experimenting with new technologies, I'm driven by curiosity, continuous learning, and the desire to build solutions that genuinely make a difference.
+            </p>
+
+            <!-- Quick Stats -->
+            <ul class="about__stats" role="list">
+              <li class="about__stat">
+                <span class="about__stat-number">8.66</span>
+                <span class="about__stat-label">CGPA</span>
+              </li>
+              <li class="about__stat">
+                <span class="about__stat-number" data-count="10">10+</span>
+                <span class="about__stat-label">Technical Projects</span>
+              </li>
+              <li class="about__stat">
+                <span class="about__stat-number" data-count="3">3</span>
+                <span class="about__stat-label">Microsoft Certifications</span>
+              </li>
+            </ul>
+
+            <!-- Resume Download -->
+            <a href="assets/ParvSood-Resume.pdf" class="btn btn--outline" download="ParvSood-Resume.pdf" id="about-resume">
+              Download Résumé
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================================
+         SKILLS SECTION
+         Categorized skill grid with proficiency indicators.
+         ========================================================== -->
+    <section id="skills" class="section skills">
+      <div class="skills__inner container">
+
+        <!-- Section Header -->
+        <header class="section__header">
+          <span class="section__label">02 — Skills</span>
+          <h2 class="section__title">Tools &amp; Technologies</h2>
+          <p class="section__subtitle">A curated collection of technologies I use to design, develop, and deploy intelligent software systems—from machine learning models to scalable full-stack applications.</p>
+        </header>
+
+        <!-- Skills Grid -->
+        <div class="skills__grid">
+
+          <!-- Category 1: AI & Machine Learning -->
+          <article class="skills__card" id="skill-ai-ml">
+            <div class="skills__card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 4.44-2.04Z"></path>
+                <path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-4.44-2.04Z"></path>
+              </svg>
+            </div>
+            <h3 class="skills__card-title">AI &amp; Machine Learning</h3>
+            <ul class="skills__tag-list" role="list">
+              <li class="skills__tag">Python</li>
+              <li class="skills__tag">Scikit-learn</li>
+              <li class="skills__tag">TensorFlow</li>
+              <li class="skills__tag">OpenCV</li>
+              <li class="skills__tag">Pandas</li>
+              <li class="skills__tag">NumPy</li>
+              <li class="skills__tag">XGBoost</li>
+              <li class="skills__tag">Machine Learning</li>
+              <li class="skills__tag">Data Analysis</li>
+              <li class="skills__tag">Model Evaluation</li>
+            </ul>
+          </article>
+
+          <!-- Category 2: LLM & AI Engineering -->
+          <article class="skills__card" id="skill-llm-ai">
+            <div class="skills__card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path>
+                <path d="M5 3v4"></path>
+                <path d="M19 17v4"></path>
+                <path d="M3 5h4"></path>
+                <path d="M17 19h4"></path>
+              </svg>
+            </div>
+            <h3 class="skills__card-title">LLM &amp; AI Engineering</h3>
+            <ul class="skills__tag-list" role="list">
+              <li class="skills__tag">LangChain</li>
+              <li class="skills__tag">Llama 3</li>
+              <li class="skills__tag">RAG</li>
+              <li class="skills__tag">FAISS</li>
+              <li class="skills__tag">Sentence Transformers</li>
+              <li class="skills__tag">Prompt Engineering</li>
+              <li class="skills__tag">Vector Search</li>
+              <li class="skills__tag">Embeddings</li>
+              <li class="skills__tag">Hugging Face</li>
+              <li class="skills__tag">AI Security</li>
+            </ul>
+          </article>
+
+          <!-- Category 3: Software Development -->
+          <article class="skills__card" id="skill-software-dev">
+            <div class="skills__card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <h3 class="skills__card-title">Software Development</h3>
+            <ul class="skills__tag-list" role="list">
+              <li class="skills__tag">Java</li>
+              <li class="skills__tag">JavaScript</li>
+              <li class="skills__tag">HTML5</li>
+              <li class="skills__tag">CSS3</li>
+              <li class="skills__tag">React</li>
+              <li class="skills__tag">Node.js</li>
+              <li class="skills__tag">FastAPI</li>
+              <li class="skills__tag">REST APIs</li>
+              <li class="skills__tag">Git</li>
+              <li class="skills__tag">Object-Oriented Programming</li>
+            </ul>
+          </article>
+
+          <!-- Category 4: Databases & Dev Tools -->
+          <article class="skills__card" id="skill-db-tools">
+            <div class="skills__card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+              </svg>
+            </div>
+            <h3 class="skills__card-title">Databases &amp; Dev Tools</h3>
+            <ul class="skills__tag-list" role="list">
+              <li class="skills__tag">PostgreSQL</li>
+              <li class="skills__tag">MongoDB</li>
+              <li class="skills__tag">Docker</li>
+              <li class="skills__tag">GitHub</li>
+              <li class="skills__tag">VS Code</li>
+              <li class="skills__tag">Linux</li>
+              <li class="skills__tag">JWT Authentication</li>
+              <li class="skills__tag">Vercel</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================================
+         FEATURED WORK SECTION
+         Featured project cards with images, descriptions, and links.
+         ========================================================== -->
+    <section id="projects" class="section projects">
+      <div class="projects__inner container">
+
+        <!-- Section Header -->
+        <header class="section__header">
+          <span class="section__label">03 — Projects</span>
+          <h2 class="section__title">Featured Work</h2>
+          <p class="section__subtitle">From intelligent software systems to cinematic storytelling—here are the projects that best represent how I think, build, and create.</p>
+        </header>
+
+        <!-- Project Filter Tabs -->
+        <div class="projects__filters" role="tablist" aria-label="Filter projects">
+          <button class="projects__filter is-active" data-filter="engineering" role="tab" aria-selected="true">Engineering</button>
+          <button class="projects__filter" data-filter="research-work" role="tab" aria-selected="false">Research</button>
+          <button class="projects__filter" data-filter="visual-stories" role="tab" aria-selected="false">Visual Stories</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects__grid" role="list">
+
+          <!-- Engineering Project 1 -->
+          <article class="projects__card" data-category="engineering" role="listitem" id="project-vectormind">
+            <figure class="projects__card-media">
+              <img
+                src="assets/images/project-01.jpg"
+                alt="Screenshot of VectorMind — Enterprise RAG Search Platform"
+                class="projects__card-img"
+                loading="lazy"
+                decoding="async"
+                width="800"
+                height="500"
+              />
+            </figure>
+            <div class="projects__card-body">
+              <span class="projects__card-year">2026</span>
+              <h3 class="projects__card-title">VectorMind</h3>
+              <p class="projects__card-desc">
+                Built a production-grade Retrieval-Augmented Generation platform using LangChain, FAISS, Sentence Transformers, FastAPI, PostgreSQL, and Llama 3 for semantic enterprise document search.
+              </p>
+              <ul class="projects__card-tags" role="list">
+                <li class="projects__card-tag">LangChain</li>
+                <li class="projects__card-tag">FAISS</li>
+                <li class="projects__card-tag">Llama 3</li>
+                <li class="projects__card-tag">FastAPI</li>
+                <li class="projects__card-tag">PostgreSQL</li>
+                <li class="projects__card-tag">Docker</li>
+              </ul>
+              <div class="projects__card-links">
+                <a href="#" class="projects__card-link" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                <a href="#" class="projects__card-link" target="_blank" rel="noopener noreferrer">Source Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Engineering Project 2 -->
+          <article class="projects__card" data-category="engineering" role="listitem" id="project-surgeiq">
+            <figure class="projects__card-media">
+              <img
+                src="assets/images/project-02.jpg"
+                alt="Screenshot of SurgeIQ — AI Dynamic Surge Pricing Platform"
+                class="projects__card-img"
+                loading="lazy"
+                decoding="async"
+                width="800"
+                height="500"
+              />
+            </figure>
+            <div class="projects__card-body">
+              <span class="projects__card-year">2026</span>
+              <h3 class="projects__card-title">SurgeIQ</h3>
+              <p class="projects__card-desc">
+                Machine learning platform that predicts ride fares and dynamically adjusts pricing using XGBoost, real-time demand analysis, and interactive analytics.
+              </p>
+              <ul class="projects__card-tags" role="list">
+                <li class="projects__card-tag">Python</li>
+                <li class="projects__card-tag">XGBoost</li>
+                <li class="projects__card-tag">Flask</li>
+                <li class="projects__card-tag">React</li>
+                <li class="projects__card-tag">Tailwind CSS</li>
+                <li class="projects__card-tag">Pandas</li>
+              </ul>
+              <div class="projects__card-links">
+                <a href="#" class="projects__card-link" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                <a href="#" class="projects__card-link" target="_blank" rel="noopener noreferrer">Source Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Engineering Project 3 -->
+          <article class="projects__card" data-category="engineering" role="listitem" id="project-smartclimate">
+            <figure class="projects__card-media">
+              <img
+                src="assets/images/project-03.jpg"
+                alt="Screenshot of Smart Climate — IoT Smart Classroom Automation"
+                class="projects__card-img"
+                loading="lazy"
+                decoding="async"
+                width="800"
+                height="500"
+              />
+            </figure>
+            <div class="projects__card-body">
+              <span class="projects__card-year">2025</span>
+              <h3 class="projects__card-title">Smart Climate</h3>
+              <p class="projects__card-desc">
+                IoT-based intelligent classroom climate monitoring and automation system using environmental sensors and microcontrollers for efficient energy management.
+              </p>
+              <ul class="projects__card-tags" role="list">
+                <li class="projects__card-tag">Arduino</li>
+                <li class="projects__card-tag">IoT</li>
+                <li class="projects__card-tag">Sensors</li>
+                <li class="projects__card-tag">Embedded C</li>
+                <li class="projects__card-tag">Firebase</li>
+              </ul>
+              <div class="projects__card-links">
+                <a href="#" class="projects__card-link" target="_blank" rel="noopener noreferrer">Case Study</a>
+                <a href="#" class="projects__card-link" target="_blank" rel="noopener noreferrer">Source Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Engineering Project 4 -->
+          <article class="projects__card" data-category="engineering" role="listitem" id="project-devflow">
+            <figure class="projects__card-media">
+              <img
+                src="assets/images/project-04.jpg"
+                alt="Screenshot of DevFlow — Developer Collaboration Platform"
+                class="projects__card-img"
+                loading="lazy"
+                decoding="async"
+                width="800"
+                height="500"
+              />
+            </figure>
+            <div class="projects__card-body">
+              <span class="projects__card-year">2026</span>
+              <h3 class="projects__card-title">DevFlow</h3>
+              <p class="projects__card-desc">
+                Modern full-stack collaboration workspace featuring Kanban boards, authentication, real-time communication, team workspaces, and project management.
+              </p>
+              <ul class="projects__card-tags" role="list">
+                <li class="projects__card-tag">React</li>
+                <li class="projects__card-tag">Node.js</li>
+                <li class="projects__card-tag">Express</li>
+                <li class="projects__card-tag">MongoDB</li>
+                <li class="projects__card-tag">Socket.IO</li>
+                <li class="projects__card-tag">JWT</li>
+              </ul>
+              <div class="projects__card-links">
+                <a href="#" class="projects__card-link" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                <a href="#" class="projects__card-link" target="_blank" rel="noopener noreferrer">Source Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Research Project 1 -->
+          <article class="projects__card" data-category="research-work" role="listitem" id="project-rag-sec" style="display: none;">
+            <figure class="projects__card-media">
+              <img
+                src="assets/images/creative-01.jpg"
+                alt="RAG Security Research paper visualization"
+                class="projects__card-img"
+                loading="lazy"
+                width="800"
+                height="500"
+              />
+            </figure>
+            <div class="projects__card-body">
+              <span class="projects__card-year">2025</span>
+              <h3 class="projects__card-title">RAG Security Research</h3>
+              <p class="projects__card-desc">
+                Exploring security vulnerabilities in Retrieval-Augmented Generation systems including prompt injection attacks, retrieval poisoning, secure indexing, and mitigation strategies.
+              </p>
+              <ul class="projects__card-tags" role="list">
+                <li class="projects__card-tag">AI Security</li>
+                <li class="projects__card-tag">LLMs</li>
+                <li class="projects__card-tag">RAG</li>
+                <li class="projects__card-tag">Vector DB</li>
+              </ul>
+              <div class="projects__card-links">
+                <a href="#" class="projects__card-link" target="_blank" rel="noopener noreferrer">Read Paper</a>
+                <a href="#" class="projects__card-link" target="_blank" rel="noopener noreferrer">Repository</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Research Project 2 -->
+          <article class="projects__card" data-category="research-work" role="listitem" id="project-llm-exp" style="display: none;">
+            <figure class="projects__card-media">
+              <img
+                src="assets/images/creative-02.jpg"
+                alt="LLM Experiments vector search visualization"
+                class="projects__card-img"
+                loading="lazy"
+                width="800"
+                height="500"
+              />
+            </figure>
+            <div class="projects__card-body">
+              <span class="projects__card-year">2024</span>
+              <h3 class="projects__card-title">LLM Experiments</h3>
+              <p class="projects__card-desc">
+                Hands-on experiments with embeddings, vector databases, semantic search, prompt engineering, retrieval optimization, and large language model evaluation.
+              </p>
+              <ul class="projects__card-tags" role="list">
+                <li class="projects__card-tag">Sentence Transformers</li>
+                <li class="projects__card-tag">Hugging Face</li>
+                <li class="projects__card-tag">Python</li>
+                <li class="projects__card-tag">Vector Search</li>
+              </ul>
+              <div class="projects__card-links">
+                <a href="#" class="projects__card-link" target="_blank" rel="noopener noreferrer">Read Paper</a>
+                <a href="#" class="projects__card-link" target="_blank" rel="noopener noreferrer">Repository</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Visual Stories Project 1 -->
+          <article class="projects__card" data-category="visual-stories" role="listitem" id="project-summer-fest" style="display: none;">
+            <figure class="projects__card-media">
+              <img
+                src="assets/images/creative-03.jpg"
+                alt="Summer Festival '26 film frame"
+                class="projects__card-img"
+                loading="lazy"
+                width="800"
+                height="500"
+              />
+            </figure>
+            <div class="projects__card-body">
+              <span class="projects__card-year">2026</span>
+              <h3 class="projects__card-title">Summer Festival '26</h3>
+              <p class="projects__card-desc">
+                Cinematic Event Film capturing the kinetic energy, stage visuals, and human stories of a multi-day music festival.
+              </p>
+              <ul class="projects__card-tags" role="list">
+                <li class="projects__card-tag">Color Grading</li>
+                <li class="projects__card-tag">Cinematography</li>
+                <li class="projects__card-tag">Sound Design</li>
+              </ul>
+              <div class="projects__card-links">
+                <a href="#" class="projects__card-link" target="_blank" rel="noopener noreferrer">Watch Film</a>
+                <a href="#" class="projects__card-link" target="_blank" rel="noopener noreferrer">Behind The Scenes</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Visual Stories Project 2 -->
+          <article class="projects__card" data-category="visual-stories" role="listitem" id="project-mumbai-local" style="display: none;">
+            <figure class="projects__card-media">
+              <img
+                src="assets/images/creative-04.jpg"
+                alt="Mumbai Local urban storytelling frame"
+                class="projects__card-img"
+                loading="lazy"
+                width="800"
+                height="500"
+              />
+            </figure>
+            <div class="projects__card-body">
+              <span class="projects__card-year">2025</span>
+              <h3 class="projects__card-title">Mumbai Local</h3>
+              <p class="projects__card-desc">
+                Urban Storytelling Reel chronicling the daily rhythm, architecture, and unsung commuters of Mumbai's railway lifeline.
+              </p>
+              <ul class="projects__card-tags" role="list">
+                <li class="projects__card-tag">Street Photography</li>
+                <li class="projects__card-tag">Documentary</li>
+                <li class="projects__card-tag">DaVinci Resolve</li>
+              </ul>
+              <div class="projects__card-links">
+                <a href="#" class="projects__card-link" target="_blank" rel="noopener noreferrer">Watch Film</a>
+                <a href="#" class="projects__card-link" target="_blank" rel="noopener noreferrer">Gallery</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Visual Stories Project 3 -->
+          <article class="projects__card" data-category="visual-stories" role="listitem" id="project-framora" style="display: none;">
+            <figure class="projects__card-media">
+              <img
+                src="assets/images/project-03.jpg"
+                alt="Framora Photography &amp; Travel Films frame"
+                class="projects__card-img"
+                loading="lazy"
+                width="800"
+                height="500"
+              />
+            </figure>
+            <div class="projects__card-body">
+              <span class="projects__card-year">2024</span>
+              <h3 class="projects__card-title">Framora</h3>
+              <p class="projects__card-desc">
+                Photography &amp; Travel Films series capturing landscape vistas, cultural portraits, and visual travel narratives.
+              </p>
+              <ul class="projects__card-tags" role="list">
+                <li class="projects__card-tag">Visual Storytelling</li>
+                <li class="projects__card-tag">Travel Photography</li>
+                <li class="projects__card-tag">Direction</li>
+              </ul>
+              <div class="projects__card-links">
+                <a href="#" class="projects__card-link" target="_blank" rel="noopener noreferrer">Explore Series</a>
+                <a href="#" class="projects__card-link" target="_blank" rel="noopener noreferrer">Gallery</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Visual Stories Project 4 -->
+          <article class="projects__card" data-category="visual-stories" role="listitem" id="project-quiet-commute" style="display: none;">
+            <figure class="projects__card-media">
+              <img
+                src="assets/images/project-02.jpg"
+                alt="The Quiet Commute Cinematic Short Film frame"
+                class="projects__card-img"
+                loading="lazy"
+                width="800"
+                height="500"
+              />
+            </figure>
+            <div class="projects__card-body">
+              <span class="projects__card-year">2024</span>
+              <h3 class="projects__card-title">The Quiet Commute</h3>
+              <p class="projects__card-desc">
+                A visual narrative capturing everyday moments through cinematic compositions, ambient storytelling, and intentional pacing.
+              </p>
+              <ul class="projects__card-tags" role="list">
+                <li class="projects__card-tag">Cinematic Narrative</li>
+                <li class="projects__card-tag">Ambient Audio</li>
+                <li class="projects__card-tag">Color Palette</li>
+              </ul>
+              <div class="projects__card-links">
+                <a href="#" class="projects__card-link" target="_blank" rel="noopener noreferrer">Watch Film</a>
+                <a href="#" class="projects__card-link" target="_blank" rel="noopener noreferrer">Stills Gallery</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- View All CTA -->
+        <div class="projects__more">
+          <a href="#contact" class="btn btn--outline" id="projects-view-all">Collaborate On A Project</a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==========================================================
+         RESEARCH SECTION
+         Hands-on AI experimentation, security exploration, and predictive modeling.
+         ========================================================== -->
+    <section id="research" class="section research">
+      <div class="research__inner container">
+
+        <!-- Section Header -->
+        <header class="section__header">
+          <span class="section__label">04 — Research</span>
+          <h2 class="section__title">Research &amp; Exploration</h2>
+          <p class="section__subtitle">Exploring artificial intelligence through hands-on experimentation, practical implementation, and continuous learning.</p>
+        </header>
+
+        <!-- Research List -->
+        <div class="research__list">
+
+          <!-- Entry 1 -->
+          <article class="research__item" id="research-1">
+            <div class="research__item-meta">
+              <time class="research__item-date" datetime="2025">2025</time>
+              <span class="research__item-venue">Independent Research</span>
+            </div>
+            <div class="research__item-body">
+              <h3 class="research__item-title">
+                Retrieval-Augmented Generation (RAG)
+              </h3>
+              <p class="research__item-abstract">
+                Explored semantic search pipelines using LangChain, FAISS, Sentence Transformers, and Llama 3 while developing VectorMind. Focused on document chunking, embeddings, vector retrieval, and citation-backed AI responses.
+              </p>
+              <ul class="research__item-tags" role="list">
+                <li class="research__item-tag">LangChain</li>
+                <li class="research__item-tag">FAISS</li>
+                <li class="research__item-tag">Llama 3</li>
+                <li class="research__item-tag">Vector Search</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Entry 2 -->
+          <article class="research__item" id="research-2">
+            <div class="research__item-meta">
+              <time class="research__item-date" datetime="2025">2025</time>
+              <span class="research__item-venue">AI Security Exploration</span>
+            </div>
+            <div class="research__item-body">
+              <h3 class="research__item-title">
+                Prompt Injection &amp; Secure LLM Systems
+              </h3>
+              <p class="research__item-abstract">
+                Studying prompt injection attacks, retrieval poisoning, hallucination mitigation, and secure RAG architectures to better understand the safety challenges of modern AI systems.
+              </p>
+              <ul class="research__item-tags" role="list">
+                <li class="research__item-tag">AI Security</li>
+                <li class="research__item-tag">Prompt Injection</li>
+                <li class="research__item-tag">LLMs</li>
+                <li class="research__item-tag">RAG</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Entry 3 -->
+          <article class="research__item" id="research-3">
+            <div class="research__item-meta">
+              <time class="research__item-date" datetime="2024">2024 – Present</time>
+              <span class="research__item-venue">Machine Learning Exploration</span>
+            </div>
+            <div class="research__item-body">
+              <h3 class="research__item-title">
+                Predictive Modeling &amp; Intelligent Systems
+              </h3>
+              <p class="research__item-abstract">
+                Experimenting with regression models, feature engineering, evaluation metrics, and optimization techniques through real-world AI and machine learning projects.
+              </p>
+              <ul class="research__item-tags" role="list">
+                <li class="research__item-tag">Python</li>
+                <li class="research__item-tag">XGBoost</li>
+                <li class="research__item-tag">Scikit-learn</li>
+                <li class="research__item-tag">Machine Learning</li>
+              </ul>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================================
+         BEYOND ENGINEERING SECTION
+         Community leadership, visual stories, and creative initiatives.
+         ========================================================== -->
+    <section id="creative" class="section creative">
+      <div class="creative__inner container">
+
+        <!-- Section Header -->
+        <header class="section__header">
+          <span class="section__label">05 — Experience</span>
+          <h2 class="section__title">Beyond Engineering</h2>
+          <p class="section__subtitle">Beyond building intelligent systems, I enjoy leading communities, creating visual stories, and contributing to initiatives that bring people together.</p>
+        </header>
+
+        <!-- 2x2 Responsive Experience Grid -->
+        <div class="creative__gallery">
+
+          <!-- Card 1 -->
+          <article class="creative__item" id="creative-nazariya">
+            <div class="creative__card-content">
+              <span class="creative__card-category">Leadership &amp; Community</span>
+              <h3 class="creative__item-title">President · Nazariya</h3>
+              <p class="creative__item-desc">Founded and currently lead Nazariya, the university's creative club, organizing photography walks, filmmaking sessions, creative workshops, and campus-wide events that encourage visual storytelling, creativity, and student collaboration.</p>
+              <a href="#" class="creative__item-btn">Explore Journey &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="creative__item" id="creative-evolve-ai">
+            <div class="creative__card-content">
+              <span class="creative__card-category">Media &amp; Branding</span>
+              <h3 class="creative__item-title">Media Executive · Evolve AI</h3>
+              <p class="creative__item-desc">Manage digital content, event coverage, promotional campaigns, and visual branding for the university's AI community, creating engaging media that strengthens outreach and student engagement.</p>
+              <a href="#" class="creative__item-btn">View Experience &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="creative__item" id="creative-swiggy">
+            <div class="creative__card-content">
+              <span class="creative__card-category">Content &amp; Creator</span>
+              <h3 class="creative__item-title">Swiggy Creator Club</h3>
+              <p class="creative__item-desc">Selected as part of the Swiggy Creator Club to create engaging digital content, collaborate on creative campaigns, and represent the campus creator community through storytelling and social media.</p>
+              <a href="#" class="creative__item-btn">See Highlights &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="creative__item" id="creative-framora">
+            <div class="creative__card-content">
+              <span class="creative__card-category">Visual Storytelling</span>
+              <h3 class="creative__item-title">Framora</h3>
+              <p class="creative__item-desc">A personal visual storytelling brand focused on cinematic filmmaking, travel photography, creative editing, and capturing meaningful moments through compelling visual narratives.</p>
+              <a href="#" class="creative__item-btn">View Portfolio &rarr;</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================================
+         CERTIFICATIONS & RECOGNITION SECTION
+         Professional certifications, achievements, and academic milestones.
+         ========================================================== -->
+    <section id="achievements" class="section achievements">
+      <div class="achievements__inner container">
+
+        <!-- Section Header -->
+        <header class="section__header">
+          <span class="section__label">06 — Recognition</span>
+          <h2 class="section__title">Certifications &amp; Recognition</h2>
+          <p class="section__subtitle">Professional certifications, notable achievements, and milestones that reflect my continuous growth in AI, software engineering, and creative technology.</p>
+        </header>
+
+        <!-- Symmetrical 3x2 Grid -->
+        <div class="achievements__grid">
+
+          <!-- Card 1: Microsoft Certifications -->
+          <article class="achievements__card" id="cert-microsoft">
+            <div class="achievements__card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+              </svg>
+            </div>
+            <h3 class="achievements__card-title">Microsoft Certifications</h3>
+            <p class="achievements__card-desc">Earned Microsoft certifications validating knowledge of Artificial Intelligence, Cloud Computing, and Modern Data Technologies.</p>
+            <div class="achievements__badges">
+              <span class="achievements__badge">✓ AI-900</span>
+              <span class="achievements__badge">✓ AZ-900</span>
+              <span class="achievements__badge">✓ DP-900</span>
+            </div>
+            <time class="achievements__card-date" datetime="2025">2025</time>
+          </article>
+
+          <!-- Card 2: Swiggy Creator Club -->
+          <article class="achievements__card" id="cert-swiggy">
+            <div class="achievements__card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+            </div>
+            <h3 class="achievements__card-title">Swiggy Creator Club</h3>
+            <p class="achievements__card-desc">Selected as part of the Swiggy Creator Club, representing the campus creator community through digital storytelling and creative initiatives.</p>
+            <time class="achievements__card-date" datetime="2024">2024</time>
+          </article>
+
+          <!-- Card 3: NVIDIA Case Competition -->
+          <article class="achievements__card" id="cert-nvidia">
+            <div class="achievements__card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
+                <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
+                <path d="M4 22h16"></path>
+                <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path>
+                <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path>
+                <path d="M18 2H6v7a6 6 0 0 0 12 0V2z"></path>
+              </svg>
+            </div>
+            <h3 class="achievements__card-title">NVIDIA Strategy Case Competition</h3>
+            <p class="achievements__card-desc">Participated in an enterprise AI consulting case competition, contributing to strategic planning, marketing solutions, and executive presentations.</p>
+            <time class="achievements__card-date" datetime="2025">2025</time>
+          </article>
+
+          <!-- Card 4: Academic Journey -->
+          <article class="achievements__card" id="cert-academic">
+            <div class="achievements__card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+            </div>
+            <h3 class="achievements__card-title">Academic Journey</h3>
+            <p class="achievements__card-desc">Currently pursuing B.Tech in Computer Science Engineering (Artificial Intelligence &amp; Machine Learning) with a CGPA of 8.66 while building practical AI and software engineering projects.</p>
+            <time class="achievements__card-date" datetime="Present">Present</time>
+          </article>
+
+          <!-- Card 5: Continuous Learning -->
+          <article class="achievements__card" id="cert-learning">
+            <div class="achievements__card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 4.44-2.04Z"></path>
+                <path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-4.44-2.04Z"></path>
+              </svg>
+            </div>
+            <h3 class="achievements__card-title">Continuous Learning</h3>
+            <p class="achievements__card-desc">Continuously exploring Retrieval-Augmented Generation, AI Security, Large Language Models, Agentic AI, and modern software engineering through independent learning and experimentation.</p>
+            <time class="achievements__card-date" datetime="Ongoing">Ongoing</time>
+          </article>
+
+          <!-- Card 6: Currently Building -->
+          <article class="achievements__card" id="cert-building">
+            <div class="achievements__card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path>
+                <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-3.05 11a22.35 22.35 0 0 1-3.95 2z"></path>
+              </svg>
+            </div>
+            <h3 class="achievements__card-title">Currently Building</h3>
+            <p class="achievements__card-desc">Developing production-ready AI applications including VectorMind, SurgeIQ, and intelligent full-stack systems focused on solving real-world problems.</p>
+            <time class="achievements__card-date" datetime="Active">Active</time>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================================
+         CONTACT SECTION
+         Contact form and social/email links.
+         ========================================================== -->
+    <section id="contact" class="section contact">
+      <div class="contact__inner container">
+
+        <!-- Section Header -->
+        <header class="section__header">
+          <span class="section__label">07 — Contact</span>
+          <h2 class="section__title">Let's Build Something Awesome.</h2>
+          <p class="section__subtitle">Whether it's AI, software, content, or just an interesting idea, my inbox is always open. If you're building something exciting—or simply want to say hi—I'd love to hear from you.</p>
+        </header>
+
+        <div class="contact__grid">
+
+          <!-- Contact Form -->
+          <form class="contact__form" id="contact-form" action="#" method="POST" novalidate>
+            <div class="contact__form-group">
+              <label for="contact-name" class="contact__label">Name</label>
+              <input
+                type="text"
+                id="contact-name"
+                name="name"
+                class="contact__input"
+                placeholder="Your full name"
+                required
+                autocomplete="name"
+              />
+            </div>
+
+            <div class="contact__form-group">
+              <label for="contact-email" class="contact__label">Email</label>
+              <input
+                type="email"
+                id="contact-email"
+                name="email"
+                class="contact__input"
+                placeholder="you@example.com"
+                required
+                autocomplete="email"
+              />
+            </div>
+
+            <div class="contact__form-group">
+              <label for="contact-subject" class="contact__label">Subject</label>
+              <input
+                type="text"
+                id="contact-subject"
+                name="subject"
+                class="contact__input"
+                placeholder="What is this about?"
+              />
+            </div>
+
+            <div class="contact__form-group">
+              <label for="contact-message" class="contact__label">Message</label>
+              <textarea
+                id="contact-message"
+                name="message"
+                class="contact__textarea"
+                rows="6"
+                placeholder="Tell me about your project..."
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary contact__submit" id="contact-submit">
+              Let's Connect &rarr;
+            </button>
+
+            <!-- Form Status (populated by JS) -->
+            <div class="contact__form-status" id="contact-status" role="alert" aria-live="polite"></div>
+          </form>
+
+          <!-- Contact Info / Social -->
+          <aside class="contact__info">
+
+            <!-- Email -->
+            <div class="contact__info-block">
+              <h3 class="contact__info-title">Email</h3>
+              <a href="mailto:parvsood2408@gmail.com" class="contact__info-link" id="contact-email-link">parvsood2408@gmail.com</a>
+            </div>
+
+            <!-- Phone -->
+            <div class="contact__info-block">
+              <h3 class="contact__info-title">Phone</h3>
+              <a href="tel:+919317809090" class="contact__info-link" id="contact-phone-link">+91 9317809090</a>
+            </div>
+
+            <!-- Location -->
+            <div class="contact__info-block">
+              <h3 class="contact__info-title">Location</h3>
+              <p class="contact__info-text">India 🇮🇳</p>
+              <p class="contact__info-text" style="font-size: var(--fs-sm); color: var(--clr-text-secondary); margin-top: 4px;">Open to internships, freelance opportunities, collaborations, and exciting conversations.</p>
+            </div>
+
+            <!-- Socials -->
+            <div class="contact__info-block">
+              <h3 class="contact__info-title">Socials</h3>
+              <ul class="contact__socials" role="list">
+                <li>
+                  <a href="https://github.com/parvvsood" class="contact__social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    <span>GitHub</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/parv-sood-40a118254/" class="contact__social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    <span>LinkedIn</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://x.com/pervsood" class="contact__social-link" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
+                    <span>X (Twitter)</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Current Status -->
+            <div class="contact__info-block">
+              <h3 class="contact__info-title">Current Status</h3>
+              <p class="contact__info-text" style="font-size: var(--fs-sm); color: var(--clr-text-secondary); line-height: var(--lh-relaxed);">
+                🟢 Available for internships, collaborations, hackathons, and exciting AI projects.
+              </p>
+            </div>
+
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+
+  <!-- ============================================================
+       FOOTER
+       Copyright, secondary links, and back-to-top.
+       ============================================================ -->
+  <footer id="footer" class="footer">
+    <div class="footer__inner container">
+
+      <div class="footer__top">
+        <!-- Footer Logo -->
+        <a href="#hero" class="footer__logo" aria-label="Back to top">
+          Parv<span class="footer__logo-dot">.</span>
+        </a>
+
+        <!-- Footer Nav -->
+        <nav class="footer__nav" aria-label="Footer navigation">
+          <ul class="footer__nav-list" role="list">
+            <li><a href="#about" class="footer__nav-link">About</a></li>
+            <li><a href="#projects" class="footer__nav-link">Projects</a></li>
+            <li><a href="#research" class="footer__nav-link">Research</a></li>
+            <li><a href="#contact" class="footer__nav-link">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <hr class="footer__divider" />
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">
+          &copy; <span id="footer-year">2026</span> Parv. All rights reserved.
+        </p>
+        <p class="footer__credit">
+          Designed &amp; built with care.
+        </p>
+      </div>
+
+      <!-- Back to Top -->
+      <a href="#hero" class="footer__back-to-top" id="back-to-top" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+      </a>
+
+    </div>
+  </footer>
+
+
+  <!-- ============================================================
+       CUSTOM CURSOR (optional — for premium feel)
+       ============================================================ -->
+  <div class="cursor" id="custom-cursor" aria-hidden="true">
+    <div class="cursor__dot"></div>
+    <div class="cursor__ring"></div>
+  </div>
+
+
+  <!-- Global Tactile Film Grain Overlay -->
+  <div class="global-grain-overlay" aria-hidden="true"></div>
+
+  <!-- Scripts -->
+  <script src="js/main.js" defer></script>
+
+</body>
+</html>
