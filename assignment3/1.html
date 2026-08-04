@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Feedback Form</title>
+    <link rel="stylesheet" href="1.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h2>Student Feedback Form</h2>
+
+    <form id="feedbackForm">
+
+        <div class="form-group">
+            <label>Student Name</label>
+            <input type="text" id="name">
+            <div class="error" id="nameError"></div>
+        </div>
+
+        <div class="form-group">
+            <label>Email</label>
+            <input type="email" id="email">
+            <div class="error" id="emailError"></div>
+        </div>
+
+        <div class="form-group">
+            <label>Course</label>
+            <select id="course">
+                <option value="">Select Course</option>
+                <option>B.Tech CSE</option>
+                <option>BCA</option>
+                <option>MCA</option>
+                <option>M.Tech</option>
+            </select>
+            <div class="error" id="courseError"></div>
+        </div>
+
+        <div class="form-group">
+            <label>Feedback</label>
+            <textarea id="feedback" rows="4"></textarea>
+            <div class="error" id="feedbackError"></div>
+        </div>
+
+        <button type="submit" class="submit-btn">Submit Feedback</button>
+        <button type="button" class="delete-btn" onclick="deleteData()">
+            Delete Stored Data
+        </button>
+
+    </form>
+
+    <div class="session" id="sessionUser"></div>
+
+    <div class="display" id="displayArea">
+        No feedback stored.
+    </div>
+
+</div>
+
+<script src="1.js"></script>
+
+</body>
+</html>
